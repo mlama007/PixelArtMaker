@@ -3,15 +3,19 @@ const executeForm = () => {
   return false;
 };
 //Define variables by selecting the DOM elements 
-const submit = document.getElementById("make");
 const table = document.getElementById('pixel_canvas');
 const colorPicker = document.getElementById('colorPicker');
+const sizePicker = document.querySelector("#sizePicker");
 // Select color input
 let changeColor = (cell) => {
   let color = colorPicker.value;
   cell.style.backgroundColor = color;
 }
-submit.addEventListener("click", makeGrid);
+// Select size
+sizePicker.addEventListener("submit", function(e) {
+    e.preventDefault();
+    makeGrid();
+});
 function makeGrid() {
   //reset table
   table.innerHTML = "";
