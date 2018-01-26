@@ -1,4 +1,5 @@
 # Pixel Art Maker Project
+https://mlama007.github.io/PixelArtMaker/
 
 Open index.html
 You will be able to make a grid (by choosing grid height and width).
